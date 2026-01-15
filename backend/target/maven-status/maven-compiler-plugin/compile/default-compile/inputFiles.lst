@@ -1,1 +1,15 @@
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/InventoryBackendApplication.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/AuthController.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/AuthResponse.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/AuthService.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/AuthTestController.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/LoginRequest.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/RegisterRequest.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/JwtAuthFilter.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/JwtService.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/SecurityBeansConfig.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/SecurityConfig.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/UserDetailsServiceImpl.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/user/Role.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/user/User.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/user/UserRepository.java
