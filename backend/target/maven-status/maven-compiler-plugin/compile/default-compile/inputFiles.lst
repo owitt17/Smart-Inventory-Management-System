@@ -5,6 +5,9 @@
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/AuthTestController.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/LoginRequest.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/auth/RegisterRequest.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/dashboard/DashboardController.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/dashboard/DashboardService.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/dashboard/dto/DashboardSummaryResponse.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/Item.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/ItemController.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/ItemRepository.java
