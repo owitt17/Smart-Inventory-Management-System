@@ -33,7 +33,9 @@ Fucntionality:
 - Dashboard
 
 Notes: I use Agile sprint-based development where I keep track of what I need to complete from day to day. In this short development it took me around 5 days to complete since few sprints I pushed into the same day.
+
 How to run:
+
 Backend:
 cd backend
 ./mvnw spring-boot:run 
