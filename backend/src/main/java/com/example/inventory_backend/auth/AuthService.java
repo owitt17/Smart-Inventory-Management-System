@@ -9,7 +9,9 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class AuthService {
@@ -41,12 +43,16 @@ public class AuthService {
     }
 
     public AuthResponse login(LoginRequest req) {
+        log.info("Login attempt for username={}", req.username());
+
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(req.username(), req.password())
         );
 
         User user = userRepository.findByUsername(req.username())
                 .orElseThrow(() -> new IllegalArgumentException("Invalid username or password."));
+
+        log.info("Login success for username={} role={}", user.getUsername(), user.getRole());
 
         String token = jwtService.generateToken(user.getUsername(), user.getRole().name());
         return new AuthResponse(token, user.getUsername(), user.getRole().name());

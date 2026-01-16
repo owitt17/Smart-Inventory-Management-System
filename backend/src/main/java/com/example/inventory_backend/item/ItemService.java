@@ -6,7 +6,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class ItemService {
@@ -21,7 +23,11 @@ public class ItemService {
                 .imageUrl(null) // will be set by upload endpoint later
                 .build();
 
+        
         Item saved = itemRepository.save(item);
+
+        log.info("Item created name={} qty={}", saved.getName(), saved.getQuantity());
+
         return toResponse(saved);
     }
 
@@ -45,6 +51,8 @@ public class ItemService {
         if (req.name() != null && !req.name().isBlank()) item.setName(req.name());
         if (req.quantity() != null) item.setQuantity(req.quantity());
 
+        log.info("item updated id={} name={} qty={}", id, item.getName(), item.getQuantity());
+
         return toResponse(item);
     }
 
@@ -54,6 +62,7 @@ public class ItemService {
             throw new IllegalArgumentException("Item not found: " + id);
         }
         itemRepository.deleteById(id);
+        log.info("Item deleted id={}", id);
     }
 
     @Transactional(readOnly = true)

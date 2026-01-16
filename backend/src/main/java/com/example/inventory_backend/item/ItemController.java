@@ -1,5 +1,6 @@
 package com.example.inventory_backend.item;
 
+import org.springframework.web.multipart.MultipartFile;
 import com.example.inventory_backend.item.dto.*;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +16,8 @@ import java.util.List;
 public class ItemController {
 
     private final ItemService itemService;
+    private final FileStorageService fileStorageService;
+    private final ItemRepository itemRepository;
 
     // ADMIN can create
     @PostMapping
@@ -57,4 +60,24 @@ public class ItemController {
     public ResponseEntity<List<ItemResponse>> search(@RequestParam String query) {
         return ResponseEntity.ok(itemService.search(query));
     }
+
+    @PostMapping("/{id}/image")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<ItemResponse> uploadImage(
+            @PathVariable Long id,
+            @RequestParam("file") MultipartFile file
+    ) throws Exception {
+        Item item = itemRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Item not found: " + id));
+
+        String imageUrl = fileStorageService.storeImage(file);
+        item.setImageUrl(imageUrl);
+        Item saved = itemRepository.save(item);
+
+        return ResponseEntity.ok(new ItemResponse(
+                saved.getId(), saved.getName(), saved.getQuantity(),
+                saved.getImageUrl(), saved.getCreatedAt(), saved.getUpdatedAt()
+        ));
+    }
+
 }

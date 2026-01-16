@@ -21,3 +21,6 @@ logging:
 jwt:
   secret: "asdf1234asdf1234asdf1234asdf1234"
   expiration-minutes: 60
+
+app:
+  upload-dir: uploads

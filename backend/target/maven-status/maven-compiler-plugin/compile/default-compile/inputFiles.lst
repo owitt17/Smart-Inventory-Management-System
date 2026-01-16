@@ -8,6 +8,7 @@
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/dashboard/DashboardController.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/dashboard/DashboardService.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/dashboard/dto/DashboardSummaryResponse.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/FileStorageService.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/Item.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/ItemController.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/ItemRepository.java
@@ -16,11 +17,13 @@
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/dto/ItemResponse.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/item/dto/ItemUpdateRequest.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/CorsConfig.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/GlobalExceptionHandler.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/JwtAuthFilter.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/JwtService.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/SecurityBeansConfig.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/SecurityConfig.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/SecurityCorsConfig.java
+/Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/StaticResourceConfig.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/security/UserDetailsServiceImpl.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/user/Role.java
 /Users/owittj/Documents/Projects/Smart-Inventory-Management-System/backend/src/main/java/com/example/inventory_backend/user/User.java
